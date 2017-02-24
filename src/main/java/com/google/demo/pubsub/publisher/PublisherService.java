@@ -13,7 +13,7 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */
-package com.google.demo.data.pipeline.pubsub;
+package com.google.demo.pubsub.publisher;
 
 import com.google.cloud.pubsub.deprecated.*;
 import org.apache.logging.log4j.Level;

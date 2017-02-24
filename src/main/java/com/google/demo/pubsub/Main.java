@@ -13,9 +13,9 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */
-package com.google.demo.data.pipeline;
+package com.google.demo.pubsub;
 
-import com.google.demo.data.pipeline.pubsub.Publisher;
+import com.google.demo.pubsub.publisher.Publisher;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

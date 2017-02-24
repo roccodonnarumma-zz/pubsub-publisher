@@ -17,7 +17,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.google.demo.data.pipeline</groupId>
+    <groupId>com.google.demo.pubsub</groupId>
     <artifactId>pubsub-publisher</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -101,7 +101,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.google.demo.data.pipeline.Main</mainClass>
+                    <mainClass>com.google.demo.pubsub.Main</mainClass>
                     <arguments>
                         <argument>argument1</argument>
                     </arguments>

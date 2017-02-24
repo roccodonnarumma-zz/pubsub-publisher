@@ -13,13 +13,13 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 */
-package com.google.demo.data.pipeline.pubsub;
+package com.google.demo.pubsub.publisher;
 
 public class Publisher {
 
     public void publishIndefinitely(long milliseconds) {
         try {
-            PublisherService publisherService = new PublisherService("pubsub-dataflow-bigquery");
+            PublisherService publisherService = new PublisherService("publisher-dataflow-bigquery");
             for (int i = 0; i < 3; i++) {
                 publisherService.publish("a message");
 
