@@ -34,10 +34,12 @@ public class PublisherService {
         topic = createTopic(topicName);
     }
 
-    public void publish(String message) {
-        logger.log(Level.INFO, String.format("Publishing message: %s", message));
+    public void publish(String data, String timestamp) {
+        logger.log(Level.INFO, String.format("Publishing message: %s", data));
 
-        topic.publish(Message.of(message));
+        Message message = Message.newBuilder(data).addAttribute("timestamp_ms", timestamp).build();
+//        Message message = Message.of(data);
+        topic.publish(message);
     }
 
     private Topic createTopic(String topicName) {
